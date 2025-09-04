@@ -1,0 +1,17 @@
+const employees = []; // <-- Move this to the top, outside any function
+
+app.post("/api/employees", authMiddleware, (req, res) => {
+  const { name, role, email } = req.body;
+  const newEmployee = {
+    id: Date.now(),
+    name,
+    role,
+    email,
+  };
+  employees.push(newEmployee);
+  res.json({ message: "Employee added", employee: newEmployee });
+});
+
+app.get("/api/employees", authMiddleware, (req, res) => {
+  res.json(employees);
+});

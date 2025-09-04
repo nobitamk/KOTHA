@@ -1,52 +1,29 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
   "dependencies": {
-    "@react-three/drei": "^9.89.2",
-    "@react-three/fiber": "^8.15.13",
-    "@testing-library/dom": "^8.19.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.10.0",
-    "firebase": "^11.9.1",
-    "framer-motion": "^10.18.0",
-    "gsap": "^3.13.0",
-    "jwt-decode": "^4.0.0",
-    "lucide-react": "^0.516.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
-    "react-json-view": "^1.21.3",
-    "react-router-dom": "^6.14.2",
-    "react-scripts": "5.0.1",
-    "tailwindcss": "^4.1.10",
+    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/runtime": "^1.10.3",
+    "framer-motion": "^12.16.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-google-recaptcha": "^3.1.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.6.2",
     "three": "^0.177.0",
-    "web-vitals": "^2.1.4"
+    
+  
+    "express": "^4.17.1",
+    "ws": "^8.5.0",
+    "mongoose": "^6.0.0",
+    "dotenv": "^10.0.0"
+  
+
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "npm-force-resolutions": "^0.0.10"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "resolutions": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-reconciler": "^0.29.0"
   }
 }
