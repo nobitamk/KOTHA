@@ -1,0 +1,154 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #f9f9f9;
+  --section-bg: #f3f4f6;
+  --primary: #6d28d9;
+  --cta-color: #4f46e5;
+}
+
+.oracle-db-page {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s ease all;
+}
+
+/* Dark Mode */
+.oracle-db-page.dark {
+  --bg-color: #0e0e0e;
+  --text-color: #f0f0f0;
+  --card-bg: #1f1f1f;
+  --section-bg: #181818;
+  --cta-color: #8b5cf6;
+}
+
+/* Hero */
+.hero-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--cta-color), #3b0764);
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background: white;
+  color: var(--cta-color);
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #f3e8ff;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Services */
+.services-section {
+  background: var(--section-bg);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #6d28d9, #8b5cf6);
+  color: white;
+}
+
+/* Why Choose */
+.why-choose-section {
+  padding: 4rem 2rem;
+  background: var(--bg-color);
+  text-align: center;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefit {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #3b0764, #6d28d9);
+  color: white;
+}
+
+/* CTA */
+.cta-section {
+  padding: 4rem 2rem;
+  background: var(--section-bg);
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}

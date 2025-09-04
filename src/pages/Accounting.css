@@ -1,0 +1,137 @@
+.accounting-container {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hero Section */
+.accounting-hero {
+  padding: 6rem 2rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.hero-left h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-left p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Button */
+.cta-btn {
+  background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+  color: white;
+  padding: 0.75rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #4338ca;
+}
+
+/* Services */
+.accounting-services {
+  padding: 4rem 2rem;
+  background: var(--section-bg);
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  color: white;
+}
+
+.service img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.accounting-cta {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #6d28d9, #3b0764);
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 4rem 2rem;
+}
+
+/* Theme Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #f9f9f9;
+  --section-bg: #f3f4f6;
+}
+
+body.dark,
+.accounting-container.dark {
+  --bg-color: #0e0e0e;
+  --text-color: #f0f0f0;
+  --card-bg: #1c1c1c;
+  --section-bg: #161616;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 1.9rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+}

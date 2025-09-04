@@ -1,0 +1,16 @@
+.trusted-scroll {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Hide scrollbar if needed */
+.trusted-scroll::-webkit-scrollbar {
+  display: none;
+}
